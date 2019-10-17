@@ -20,3 +20,22 @@
   font-family: PopMedium;
   src: url(./fonts/Poppins-Medium.ttf);
 }
+
+body {
+  font-family: PopLight;
+}
+
+.portofolio {
+  color: white;
+  background: radial-gradient(rgba(43, 55, 96, 1), rgba(11, 16, 35, 1));
+}
+
+nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
