@@ -11,3 +11,20 @@
   left: 50%;
   transform: translate(-50%, -70%);
 }
+
+.s1 {
+  background-image: url("./img/couch.jpg");
+  background-size: cover;
+}
+
+.section h1 {
+  font-size: 64px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  /* Create a gradient for text by using background and webkit */
+  background: linear-gradient(to left, #87c7df, #649896);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
