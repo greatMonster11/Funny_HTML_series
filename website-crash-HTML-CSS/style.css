@@ -39,3 +39,25 @@ nav {
   align-items: center;
   padding: 20px 0px;
 }
+
+.logo {
+  font-size: 20px;
+}
+
+.page {
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.hero {
+  overflow: hidden;
+  height: 500px;
+  align-self: center;
+  justify-self: center;
+}
+
+.details {
+  grid-column: 2/3;
+  align-self: end;
+}
