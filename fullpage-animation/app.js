@@ -19,5 +19,9 @@ new fullpage("#fullpage", {
         .fromTo(chairs[1], 1, { opacity: 0 }, { opacity: 1 })
         .fromTo(chairs[2], 1, { opacity: 0 }, { opacity: 1 });
     }
+    /**
+     * TODO: add animatino for index = 2
+     *
+     **/
   }
 });
