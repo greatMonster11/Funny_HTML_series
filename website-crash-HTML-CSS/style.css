@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: PopLight;
+  src: url(./fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: PopRegular;
+  src: url(./fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PopMedium;
+  src: url(./fonts/Poppins-Medium.ttf);
+}
