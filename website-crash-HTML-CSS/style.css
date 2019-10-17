@@ -55,6 +55,31 @@ nav {
   height: 500px;
   align-self: center;
   justify-self: center;
+  display: flex;
+}
+
+.hero img {
+  height: 500px;
+  transition: transform 0.3s ease-out;
+  cursor: pointer;
+}
+
+.model-right {
+  transform: translate(0%, 10%);
+}
+
+.model-left {
+  transform: translate(0%, -10%);
+}
+
+.hero:hover .model-right {
+  transform: translate(0%, 0%);
+  /* Remember the first one is X and second one is Y */
+}
+
+.hero:hover .model-left {
+  transform: translate(0%, 0%);
+  /* Remember the first one is X and second one is Y */
 }
 
 .details {
