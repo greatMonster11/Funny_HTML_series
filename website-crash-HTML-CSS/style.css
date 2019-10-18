@@ -185,3 +185,59 @@ nav {
   margin: auto;
   padding: 80px 0px;
 }
+
+.story-description,
+.work-description {
+  width: 50%;
+}
+
+.story-description h3 {
+  font-size: 36px;
+  padding-bottom: 30px;
+}
+
+.story-description p,
+.work-description p {
+  padding: 20px 0px;
+  font-size: 20px;
+}
+
+.work-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+}
+
+.work-gallery img {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .page {
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 2fr 1fr;
+    align-items: center;
+  }
+
+  .hero {
+    grid-column: 2/3;
+    height: auto;
+  }
+
+  .hero img {
+    height: 500px;
+  }
+
+  .details {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+  }
+
+  .details h1 {
+    font-size: 48px;
+  }
+
+  .details h2 {
+    font-size: 38px;
+  }
+}
