@@ -240,4 +240,37 @@ nav {
   .details h2 {
     font-size: 38px;
   }
+
+  /* Style for sub pages */
+  .story,
+  .my-work {
+    flex-direction: column;
+  }
+  .story-description,
+  .work-description {
+    width: 100%;
+  }
+  .work-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .profile {
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    grid-template-rows: 2fr 1fr;
+  }
+  .hero img {
+    height: 300px;
+  }
+  .details h1 {
+    font-size: 38px;
+  }
+  .details h2 {
+    font-size: 28px;
+  }
 }
