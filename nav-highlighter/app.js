@@ -4,7 +4,12 @@ function santasNav() {
 
   sections.forEach(section => {
     section.addEventListener("mouseenter", function() {
-      console.log(this);
+      // console.log(this);
+      const id = this.getAttribute("id");
+      // console.log(id);
+      const navActive = document.querySelector(`a[href="#${id}"]`);
+      // console.log(navActive);
+      navActive.classList.add("active");
     });
   });
 }
