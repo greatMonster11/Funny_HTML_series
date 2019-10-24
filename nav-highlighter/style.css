@@ -70,6 +70,7 @@ nav a::after {
 
 nav li {
   overflow: hidden;
+  height: 25px;
 }
 
 a.active::after {

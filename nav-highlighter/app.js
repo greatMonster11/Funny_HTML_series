@@ -9,6 +9,7 @@ function santasNav() {
       // console.log(id);
       const navActive = document.querySelector(`a[href="#${id}"]`);
       // console.log(navActive);
+      navLinks.forEach(link => link.classList.remove("active"));
       navActive.classList.add("active");
     });
   });
