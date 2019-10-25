@@ -58,3 +58,73 @@
   display: block;
   padding: 8px 22px;
 }
+
+.banner {
+  display: flex;
+  color: #fff;
+  top: 25%;
+  left: 130px;
+  position: absolute;
+}
+
+.app-text {
+  width: 50%;
+  flex: 2;
+}
+
+.app-text h1 {
+  width: 640px;
+  font-size: 43px;
+  position: relative;
+  margin-left: 40px;
+}
+
+.app-text p {
+  width: 640px;
+  line-height: 25px;
+  margin: 30px 0 30px 40px;
+  color: #919191;
+}
+
+.app-picture {
+  flex: 1;
+  width: 50%;
+}
+
+.app-picture img {
+  width: 100%;
+  margin-top: -20px;
+  /* padding-left: 50px; */
+}
+
+.play-btn {
+  margin-left: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-btn-inner {
+  height: 50px;
+  width: 50px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#42455a, #42455a),
+    radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.play-btn-inner .fa {
+  padding: 16px 0;
+  margin-left: 18px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+small {
+  margin-left: 20px;
+  cursor: pointer;
+  color: #19dafa;
+  letter-spacing: 3px;
+}
