@@ -128,3 +128,33 @@ small {
   color: #19dafa;
   letter-spacing: 3px;
 }
+
+.quick-links {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #db1bf6, #19d7f8);
+}
+
+.quick-links ul {
+  display: inline-flex;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.quick-links ul li {
+  list-style: none;
+  margin: 0 50px;
+  cursor: pointer;
+}
+
+.quick-links ul li .fa {
+  font-size: 25px;
+  color: #fff;
+}
+
+.quick-links ul li p {
+  margin-top: 15px;
+  font-size: 10px;
+  color: #fff;
+}
