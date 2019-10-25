@@ -158,3 +158,23 @@ small {
   font-size: 10px;
   color: #fff;
 }
+
+.social-icons {
+  position: absolute;
+  bottom: 35px;
+  right: 72px;
+}
+
+.social-icons ul li {
+  list-style: none;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.social-icons ul li a {
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 50%;
+  padding: 8px;
+  display: block;
+}
