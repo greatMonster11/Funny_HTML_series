@@ -2,4 +2,59 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: #42455a;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul {
+  display: inline-flex;
+  margin: 50px;
+}
+
+.menu ul li {
+  list-style: none;
+  margin: 0px 20px;
+  cursor: pointer;
+  color: #b2b1b1;
+}
+
+.logo img {
+  width: 30px;
+  height: auto;
+  margin-top: -7px;
+  margin-right: 48px;
+}
+
+.active {
+  color: #19dafa !important;
+}
+
+.signup-btn {
+  position: absolute;
+  right: 48px;
+  top: 24px;
+  margin: 20px;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#42455a, #42455a),
+    radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.signup-btn span {
+  display: block;
+  padding: 8px 22px;
 }
