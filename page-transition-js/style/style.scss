@@ -3,3 +3,43 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+.nav-list {
+  height: 10vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  list-style: none;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.home {
+  height: 90vh;
+  position: absolute;
+  width: 100%;
+}
+
+.home-content {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  img {
+    height: 70%;
+  }
+  h1 {
+    font-size: 50px;
+    margin: 30px 0;
+  }
+}
+
+.home {
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
