@@ -15,6 +15,21 @@ body {
   transform-box: fill-box;
 }
 
+#man-on-a-bike {
+  animation: bike 1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes bike {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(20deg);
+  }
+}
+
 @keyframes wheel {
   from {
     transform: rotateZ(0deg);
