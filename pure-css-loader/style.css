@@ -3,3 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.container {
+  background-color: #29292e;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.simple-spinner {
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(150, 150, 150, 0.2);
+  border-radius: 50%;
+  border-top-color: rgb(150, 150, 150);
+  animation: rotate 1s 0s infinite ease-in-out alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
