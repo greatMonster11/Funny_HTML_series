@@ -52,3 +52,46 @@
   border-top-color: inherit;
   animation: rotate 0.5s 0s infinite linear reverse;
 }
+
+.flip-walker {
+  width: 64px;
+  height: 64px;
+}
+
+.flip-walker::before {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 50%;
+  background-color: rgba(150, 150, 150, 0.5);
+  animation: flip 2s 0s infinite ease normal, glow 2s 0s infinite linear normal;
+}
+
+@keyframes flip {
+  0% {
+    transform: translate(0, 0) rotateX(0) rotateY(0);
+  }
+
+  25% {
+    transform: translate(100%, 0) rotateX(0) rotateY(180deg);
+  }
+
+  50% {
+    transform: translate(100%, 100%) rotateX(-180deg) rotateY(180deg);
+  }
+
+  75% {
+    transform: translate(0, 100%) rotateX(-180deg) rotateY(360deg);
+  }
+
+  100% {
+    transform: translate(0, 0) rotateX(0) rotateY(360deg);
+  }
+}
+
+@keyframes glow {
+  to {
+    background: white;
+    box-shadow: 0 0 15px white;
+  }
+}
