@@ -31,3 +31,24 @@
     transform: rotate(360deg);
   }
 }
+
+.double-spinner {
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(150, 150, 150, 0.2);
+  border-radius: 50%;
+  border-top-color: rgb(150, 150, 150);
+  animation: rotate 1s 0s infinite ease-in-out alternate;
+}
+
+.double-spinner::after {
+  content: "";
+  height: 40%;
+  width: 40%;
+  display: block;
+  margin: 10px auto;
+  border: inherit;
+  border-radius: inherit;
+  border-top-color: inherit;
+  animation: rotate 0.5s 0s infinite linear reverse;
+}
