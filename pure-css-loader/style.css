@@ -136,7 +136,7 @@ body {
   box-sizing: border-box;
   padding: 2rem;
   border-radius: 4px;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1rem 2rem rgba(150, 150, 150, 0.2);
 
   font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 2rem;
