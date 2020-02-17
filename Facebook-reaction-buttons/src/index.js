@@ -1,7 +1,5 @@
 import "./main.scss";
 
-console.log("hey i'm here");
-
 $(function() {
   $(".like-btn").hover(
     function() {
@@ -16,5 +14,3 @@ $(function() {
     }
   );
 });
-
-console.log("hello hteere");
