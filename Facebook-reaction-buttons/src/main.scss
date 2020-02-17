@@ -1,3 +1,41 @@
-h1 {
-  color: red;
+html,
+body {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.feed {
+  width: 500px;
+  height: 473px;
+  background-image: url("../image/feed_template.png");
+  position: relative;
+
+  .like-btn {
+    width: 44px;
+    height: 25px;
+    background: #d0d0d0;
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
+    cursor: pointer;
+
+    &:hover {
+      background: #718c00;
+
+      .reaction-box {
+        display: block;
+      }
+    }
+
+    .reaction-box {
+      position: absolute;
+      width: 312px;
+      height: 55px;
+      background: #f0c674;
+      border-radius: 28px;
+      left: -25px;
+      bottom: 25px;
+      display: none;
+    }
+  }
 }
