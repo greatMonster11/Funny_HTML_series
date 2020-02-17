@@ -7,7 +7,7 @@ body {
 .feed {
   width: 500px;
   height: 473px;
-  background-image: url("../image/feed_template.png");
+  background-image: url(http://i.imgur.com/HckmGbj.png);
   position: relative;
 
   .like-btn {
@@ -19,21 +19,15 @@ body {
     left: 13px;
     cursor: pointer;
 
-    &:hover {
-      background: #718c00;
-
-      .reaction-box {
-        display: block;
-
-        .reaction-icon:hover {
-          transform: scale(1.4);
-          transform-origin: bottom;
-
-          label {
-            visibility: visible;
-          }
-        }
-      }
+    &::before {
+      content: ".";
+      opacity: 0;
+      display: block;
+      width: 44px;
+      height: 10px;
+      position: absolute;
+      top: -10px;
+      left: 0;
     }
 
     .reaction-box {
@@ -43,7 +37,7 @@ body {
       background: #f0c674;
       border-radius: 28px;
       left: -25px;
-      bottom: 25px;
+      bottom: 35px;
       display: none;
 
       .reaction-icon {
@@ -54,6 +48,10 @@ body {
         border-radius: 20px;
         margin: 8px -1px 0 8px;
         text-align: center;
+        // Animation
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        opacity: 0;
+        transform: translate(0, 100px) scale(0);
 
         label {
           padding: 3px 5px 3px 5px;
@@ -63,7 +61,31 @@ body {
           font-size: 11px;
           color: #fff;
           background: #333;
-          visibility: hidden; // make label disapear
+          visibility: hidden;
+        }
+      }
+    }
+
+    &:hover {
+      background: #718c00;
+
+      .reaction-box {
+        display: block;
+
+        .reaction-icon {
+          &.show {
+            opacity: 1;
+            transform: translate(0, 0) scale(1);
+          }
+
+          &:hover {
+            transform: scale(1.4);
+            transform-origin: bottom;
+
+            label {
+              visibility: visible;
+            }
+          }
         }
       }
     }
