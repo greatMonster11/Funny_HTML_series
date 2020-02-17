@@ -24,6 +24,15 @@ body {
 
       .reaction-box {
         display: block;
+
+        .reaction-icon:hover {
+          transform: scale(1.4);
+          transform-origin: bottom;
+
+          label {
+            visibility: visible;
+          }
+        }
       }
     }
 
@@ -36,6 +45,27 @@ body {
       left: -25px;
       bottom: 25px;
       display: none;
+
+      .reaction-icon {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background: #8959a8;
+        border-radius: 20px;
+        margin: 8px -1px 0 8px;
+        text-align: center;
+
+        label {
+          padding: 3px 5px 3px 5px;
+          position: relative;
+          top: -24px;
+          border-radius: 10px;
+          font-size: 11px;
+          color: #fff;
+          background: #333;
+          visibility: hidden; // make label disapear
+        }
+      }
     }
   }
 }
