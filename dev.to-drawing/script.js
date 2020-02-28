@@ -19,11 +19,50 @@ function getCoordinates(event) {
   }
 }
 
+function drawLine(firstX, firstY, secondX, secondY) {
+  // set attribute of the line
+  context.strokeStyle = "black";
+  context.lineJoin = "round";
+  context.lineWidth = 5;
+
+  context.beginPath();
+  context.moveTo(secondX, secondY);
+  context.lineTo(firstX, firstY);
+  context.closePath();
+
+  // actually draw the path *
+  context.stroke();
+}
+
+function paint(e) {
+  if (isPainting) {
+    let [newX, newY] = getCoordinates(e);
+    drawLine(x, y, newX, newY);
+
+    // set x, y to our new coordinates
+    x = newX;
+    y = newY;
+  }
+}
+
+canvas.addEventListener("mousemove", paint);
+canvas.addEventListener("touchmove", paint);
+
 function startPaint(e) {
   isPainting = true;
   let coordinates = getCoordinates(e);
-  console.log(coordinates);
+  x = coordinates[0];
+  y = coordinates[1];
 }
 
 canvas.addEventListener("mousedown", startPaint);
 canvas.addEventListener("touchstart", startPaint);
+
+// stop drawing event
+function exit() {
+  isPainting = false;
+}
+
+canvas.addEventListener("mouseup", exit);
+canvas.addEventListener("mouseleave", exit);
+canvas.addEventListener("touchend", exit);
