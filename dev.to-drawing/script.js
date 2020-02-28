@@ -9,7 +9,6 @@ let x, y, isPainting;
 function getCoordinates(event) {
   // check to see if mobile or desktop
   if (["mousedown", "mousemove"].includes(event.type)) {
-    // click events
     return [event.pageX - canvas.offsetLeft, event.pageY - canvas.offsetTop];
   } else {
     // touch coordinates
