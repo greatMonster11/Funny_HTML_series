@@ -4,6 +4,29 @@ const context = canvas.getContext("2d");
 canvas.setAttribute("width", window.innerWidth);
 canvas.setAttribute("height", window.innerHeight);
 
+// handle change color
+let defaultColor = "black";
+const colors = document.querySelectorAll(".colors li");
+
+colors.forEach(color => {
+  color.addEventListener("click", function() {
+    const { value } = color.attributes.value;
+    // console.log(value);
+    // update pen color
+    defaultColor = value;
+
+    // update colors status
+    colors.forEach(color => color.classList.remove("selected"));
+    color.classList.add("selected");
+  });
+});
+
+// handle clear event
+const clearButton = document.querySelector(".clear");
+clearButton.addEventListener("click", function() {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+});
+
 let x, y, isPainting;
 
 function getCoordinates(event) {
@@ -21,7 +44,7 @@ function getCoordinates(event) {
 
 function drawLine(firstX, firstY, secondX, secondY) {
   // set attribute of the line
-  context.strokeStyle = "black";
+  context.strokeStyle = defaultColor;
   context.lineJoin = "round";
   context.lineWidth = 5;
 
