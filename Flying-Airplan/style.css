@@ -11,3 +11,21 @@
   background-color: #00ccff;
   overflow-x: hidden;
 }
+
+.clouds {
+  position: absolute;
+  content: "";
+  top: 50px;
+  right: 0;
+  left: -2000px;
+  width: 500%;
+  height: 100px;
+  background-image: url("./images/clouds.png");
+  background-repeat: repeat-x;
+  animation: clouds 50s linear infinite;
+}
+@keyframes clouds {
+  100% {
+    transform: translateX(2000px);
+  }
+}
