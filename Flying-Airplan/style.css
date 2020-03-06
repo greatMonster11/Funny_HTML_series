@@ -29,3 +29,21 @@
     transform: translateX(2000px);
   }
 }
+
+.mountains {
+  position: absolute;
+  bottom: 0;
+  height: 250px;
+  right: 0;
+  left: -2000px;
+  width: 500%;
+  background-image: url("./images/mountain.png");
+  background-repeat: repeat-x;
+  animation: mountains 10s linear infinite;
+}
+
+@keyframes mountains {
+  100% {
+    transform: translateX(2000px);
+  }
+}
