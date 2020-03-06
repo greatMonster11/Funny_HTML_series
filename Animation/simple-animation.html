@@ -1,0 +1,38 @@
+<htmL>
+  <head>
+    <title>First Animation</title>
+    <style type="text/css" media="screen">
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rebeccapurple;
+      }
+
+      div {
+        background-color: #2eec71;
+        height: 100px;
+        width: 100px;
+        animation-duration: 2s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);  
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div />
+  </body>
+</htmL>
