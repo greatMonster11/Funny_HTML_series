@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sky {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #00ccff;
+  overflow-x: hidden;
+}
