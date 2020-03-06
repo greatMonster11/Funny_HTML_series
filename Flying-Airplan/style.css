@@ -47,3 +47,41 @@
     transform: translateX(2000px);
   }
 }
+
+.airplane {
+  position: absolute;
+  top: 180px;
+  transform: translateX(500px);
+  z-index: 1;
+  border: 1px solid red;
+}
+
+.flame {
+  position: relative;
+  top: -40px;
+  left: 150px;
+  height: 10px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: pink;
+  z-index: -1;
+  animation: flame 0.3s linear infinite;
+}
+
+.flame2 {
+  top: -195px;
+  left: 115px;
+  background-color: yellow;
+}
+
+@keyframes flame {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
