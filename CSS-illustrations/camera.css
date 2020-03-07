@@ -1,0 +1,221 @@
+:root {
+  --background: #b5e8fb;
+  --grey: #34495e;
+  --dark-grey: #212f3d;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  position: absolute;
+}
+
+*::before,
+*::after {
+  content: "";
+  position: absolute;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.polaroid {
+  width: 420px;
+  height: 280px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.polaroid-body {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 10px 10px mediumturquoise;
+}
+
+.button {
+  width: 13%;
+  height: 8%;
+  top: -5%;
+  left: 14%;
+  background-color: #cb214a;
+  border-radius: 10px;
+  animation: button 4s linear infinite;
+}
+
+.flash {
+  width: 24%;
+  height: 20%;
+  top: -32px;
+  left: 38%;
+  background-color: var(--grey);
+  border-radius: 10px;
+}
+
+.flash::after {
+  top: 10%;
+  left: 32%;
+  width: 38%;
+  height: 40%;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+.blinker {
+  top: 15%;
+  left: 15%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--dark-grey);
+  animation: blinker 5s linear infinite;
+}
+
+.zoom {
+  width: 50%;
+  height: 75%;
+  left: 25%;
+  top: 12.5%;
+  background: var(--dark-grey);
+  border-radius: 50%;
+  border: 5px solid var(--grey);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 99;
+  animation: zoom 5s linear infinite;
+}
+
+.zoom::before {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: #2c3e50;
+  border: 10px solid var(--grey);
+}
+
+.zoom::after {
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: var(--dark-grey);
+}
+
+.reflections {
+  height: 100%;
+  width: 100%;
+  top: -35%;
+  left: -35%;
+  background-color: #fff;
+  opacity: 0.3;
+  transform: rotate(-45deg);
+  z-index: 9999;
+}
+
+.reflections::after {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  left: 50%;
+  top: 105%;
+  opacity: 0.5;
+}
+
+.stripes {
+  height: 7px;
+  width: 50%;
+  right: 0;
+  top: 40%;
+  box-shadow: 0px 7px rgb(214, 0, 121), 0px 14px rgb(230, 141, 21),
+    0px 21px rgb(254, 200, 3), 0px 28px rgb(221, 229, 107),
+    0px 35px rgb(62, 162, 48), 0px 42px rgb(1, 136, 194);
+}
+
+.flashlight {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 0.7;
+  transition: all ease 0.2s;
+  opacity: 0;
+  animation: flashlight 5s linear infinite;
+}
+
+@keyframes button {
+  0%,
+  5%,
+  15%,
+  100% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes zoom {
+  20%,
+  32% {
+    transform: rotate(0deg);
+  }
+
+  26% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes blinker {
+  33%,
+  37%,
+  39%,
+  43%,
+  45%,
+  50% {
+    background-color: var(--dark-grey);
+  }
+  34%,
+  36%,
+  40%,
+  42%,
+  46%,
+  48% {
+    background-color: red;
+  }
+}
+
+@keyframes flashlight {
+  55%,
+  65% {
+    opacity: 0;
+  }
+  56% {
+    opacity: 1;
+  }
+}
