@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Skeleton</title>
   </head>
-  <body>
+  <body style="overflow: hidden;">
     <section class="skeleton">
       <div class="skeleton__navbar">
         <div class="skeleton__nav-item"></div>
@@ -28,5 +28,11 @@
         <div class="skeleton__product"></div>
       </div>
     </section>
+    <script>
+      window.addEventListener("load", () => {
+        document.body.style.overflow = "visible";
+        elements.skeleton.style.display = "none";
+      });
+    </script>
   </body>
 </html>
