@@ -33,7 +33,7 @@ window.onload = function () {
         x: 100 + i * (radius * 2),
         y: canvas.height / 2,
         radius: radius,
-        color: colors[parseInt(Math.random() * colors.length)],
+        color: colors[parseInt(Math.random() * colors.length)], // get a random color
         head: null,
       });
 
@@ -45,12 +45,11 @@ window.onload = function () {
   };
 
   const update = function () {
-    for (let i = 0; i < nodes.length; i++) {
+    for (let i = 0; i < nodes.length - 1; i++) {
       const node = nodes[i];
 
       let dx = node.head.x - node.x;
       let dy = node.head.y - node.y;
-
       const dst = Math.sqrt(dx * dx + dy * dy);
       const sumRadii = node.radius + node.head.radius;
 
@@ -58,7 +57,7 @@ window.onload = function () {
         dx /= dst; // get Unit vector x component (heading)
         dy /= dst; // get Unit vector y component (heading)
         node.x += dx * (dst * 0.2); // update x position of each node
-        node.y += dy * (dst * 0.2); // update x postion of each node
+        node.y += dy * (dst * 0.2); // update y postion of each node
       }
     }
   };
