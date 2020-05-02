@@ -40,6 +40,8 @@
     if (count > delay) {
       currentFrameX++;
       count = 0;
+    } else {
+      count++;
     }
 
     if (currentFrameX > maxFrameLength) currentFrameX = 1;
