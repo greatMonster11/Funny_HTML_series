@@ -1,0 +1,37 @@
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 50%;
+  height: 25px;
+  background: orange;
+  outline: none;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
