@@ -1,0 +1,43 @@
+.container {
+  height: 100vh;
+  display: flex;
+  padding: 1rem;
+}
+
+.col {
+  height: 100%;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.col-3 {
+  flex-basis: 25%;
+}
+
+.col-9 {
+  flex-basis: 75%;
+}
+
+.col-9 h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.editor-view {
+  border: 2px dotted #efefef;
+  min-height: 400px;
+  width: 100%;
+}
+
+.comp {
+  background: mediumseagreen;
+  height: 50px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
