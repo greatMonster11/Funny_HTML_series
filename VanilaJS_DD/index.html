@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vanila JS Drag and Drop</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="col col-3">
+        <div class="comp-header">
+          <div
+            data-table="comp-01"
+            draggable="true"
+            ondragstart="onDragStart(event);"
+            ondragend="onDragEnd(event);"
+            class="comp js-draggable"
+          >
+            [Header Component]
+          </div>
+          <div
+            data-table="comp-02"
+            draggable="true"
+            ondragstart="onDragStart(event);"
+            ondragend="onDragEnd(event);"
+            class="comp js-graggable"
+          >
+            [Image Component]
+          </div>
+          <div
+            data-table="comp-03"
+            draggable="true"
+            ondragstart="onDragStart(event);"
+            ondragend="onDragEnd(event);"
+            class="comp js-draggable"
+          >
+            [Text Component]
+          </div>
+          <div
+            data-table="comp-04"
+            draggable="true"
+            ondragstart="onDragStart(event);"
+            ondragend="onDragEnd(event);"
+            class="comp js-draggable"
+          >
+            [Footer Component]
+          </div>
+        </div>
+      </div>
+      <div class="col col-9">
+        <h3>DropZone</h3>
+        <div
+          id="dropzone"
+          class="editor-view"
+          ondragover="onDragOver(event);"
+          ondrop="onDrop(event);"
+        ></div>
+      </div>
+
+      <div class="hidden">
+        <header class="actual-comp" id="comp-01">
+          <a href="https://github.com/greatMonster11">
+            <img
+              src="https://res.cloudinary.com/practicaldev/image/fetch/s--gpoX_y12--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/193443/b2cd2770-e4c9-47d2-8416-76bf0147d064.jpeg"
+              alt="greatMonster11"
+              height="50"
+            />
+          </a>
+          <a href="#">Menu</a>
+        </header>
+        <div class="actual-comp" id="comp-02">
+          <img
+            class="image"
+            src="https://images.unsplash.com/photo-1587588354456-ae376af71a25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+          />
+        </div>
+        <div class="actual-comp" id="comp-03">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            eum eaque magni ea velit maiores modi dolorum ratione suscipit.
+            Impedit, vero debitis hic enim praesentium officia dignissimos fugit
+            eum neque. Cum expedita aperiam quod totam tempore quisquam
+            inventore ducimus odio esse doloremque reiciendis iste quo non nemo,
+            recusandae et quam ipsam necessitatibus sit accusantium! Voluptatem
+            expedita vel quibusdam quo consequuntur? Perspiciatis possimus
+            doloremque ex eligendi quaerat libero velit temporibus! Pariatur eos
+            veritatis temporibus laboriosam deserunt repellat voluptatibus
+            asperiores animi ullam dolores porro accusantium, quisquam illum
+            aperiam quis cum. Suscipit, nam.
+          </p>
+        </div>
+        <footer class="actual-comp" id="comp-04">
+          &copy; greatMonster11 2020
+        </footer>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
