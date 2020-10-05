@@ -1,0 +1,118 @@
+html, body {
+    background-color: white;
+}
+
+.box {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 12px;
+    position: relative;
+    animation: function 6s infinite;
+    color: white;
+    text-align: center;
+}
+
+div:nth-child(1) {
+    background-color: red;
+    animation-timing-function: ease;
+}
+
+div:nth-child(2) {
+    background-color: tomato;
+    animation-timing-function: linear;
+}
+
+div:nth-child(3) {
+    background-color: yellow;
+    animation-timing-function: ease-in;
+}
+
+div:nth-child(4) {
+    background-color: mediumseagreen;
+    animation-timing-function: ease-out;
+}
+
+div:nth-child(5) {
+    background-color: cyan;
+    animation-timing-function: ease-in-out;
+}
+
+div:nth-child(6) {
+    background-color: blue;
+    animation-timing-function: cubic-bezier(0.1,0.7,1.0,0.1);
+}
+
+div:nth-child(7) {
+    background-color: purple;
+    animation-timing-function: cubic-bezier(1,0.7,0.58,1);
+}
+
+@keyframes function {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 200px;
+    }
+}
+
+p {
+    color: blue;
+}
+
+/*
+ * Implement for check box
+ */
+
+.wrapper {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    margin-right: 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.circle {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer {
+    width: 75px;
+    height: 75px;
+    background-color: #3c249c;
+}
+
+.inner {
+    width: 55px;
+    height: 55px;
+    background-color: #6754b0;
+}
+
+.btn {
+    width: 55px;
+    height: 55px;
+    top: 50px;
+    background-color: #9d87f5;
+    color: #170514;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    filter: invert(100%);
+}

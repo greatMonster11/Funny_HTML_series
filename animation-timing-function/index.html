@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timing function</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">ease</div>
+    <div class="box">linear</div>
+    <div class="box">ease-in</div>
+    <div class="box">ease-out</div>
+    <div class="box">ease-in-out</div>
+    <div class="box">Cubic-bezier</div>
+    <div class="box">Cubic-bezier</div>
+
+    <div class="wrapper">
+      <span class="label">Toggle</span>
+      <div class="circle outer">
+        <div class="circle inner">
+          <button class="btn"></button>
+        </div>
+      </div>
+    </div>
+
+    <p>Some of basic implement on using timing functions</p>
+    <p>Although using switch mode with single line of code <strong>filter: invert(100%)</strong></p>
+
+    <script>
+      let button = document.querySelector(".btn")
+      button.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark-mode")
+      })
+    </script>
+  </body>
+</html>
