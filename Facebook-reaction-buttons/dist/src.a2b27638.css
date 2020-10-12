@@ -1,0 +1,71 @@
+html,
+body {
+  padding: 20px;
+  font-family: sans-serif; }
+
+.feed {
+  width: 500px;
+  height: 473px;
+  background-image: url("/feed_template.a226f9ad.png");
+  position: relative; }
+  .feed .like-btn {
+    width: 44px;
+    height: 25px;
+    background: #d0d0d0;
+    position: absolute;
+    bottom: 13px;
+    left: 13px;
+    cursor: pointer; }
+    .feed .like-btn::before {
+      content: ".";
+      opacity: 0;
+      display: block;
+      width: 44px;
+      height: 10px;
+      position: absolute;
+      top: -10px;
+      left: 0; }
+    .feed .like-btn .reaction-box {
+      position: absolute;
+      width: 312px;
+      height: 55px;
+      background: #f0c674;
+      border-radius: 28px;
+      left: -25px;
+      bottom: 35px;
+      display: none; }
+      .feed .like-btn .reaction-box .reaction-icon {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background: #8959a8;
+        border-radius: 20px;
+        margin: 8px -1px 0 8px;
+        text-align: center;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        opacity: 0;
+        transform: translate(0, 100px) scale(0); }
+        .feed .like-btn .reaction-box .reaction-icon label {
+          padding: 3px 5px 3px 5px;
+          position: relative;
+          top: -24px;
+          border-radius: 10px;
+          font-size: 11px;
+          color: #fff;
+          background: #333;
+          visibility: hidden; }
+    .feed .like-btn:hover {
+      background: #718c00; }
+      .feed .like-btn:hover .reaction-box {
+        display: block; }
+        .feed .like-btn:hover .reaction-box .reaction-icon.show {
+          opacity: 1;
+          transform: translate(0, 0) scale(1); }
+        .feed .like-btn:hover .reaction-box .reaction-icon:hover {
+          transform: scale(1.4);
+          transform-origin: bottom; }
+          .feed .like-btn:hover .reaction-box .reaction-icon:hover label {
+            visibility: visible; }
+
+
+/*# sourceMappingURL=/src.a2b27638.css.map */
