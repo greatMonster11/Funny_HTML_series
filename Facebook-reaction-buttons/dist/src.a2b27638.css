@@ -6,7 +6,7 @@ body {
 .feed {
   width: 500px;
   height: 473px;
-  background-image: url("/feed_template.a226f9ad.png");
+  background-image: url("./feed_template.a226f9ad.png");
   position: relative; }
   .feed .like-btn {
     width: 44px;
