@@ -9,7 +9,7 @@ function imageGallery() {
       const bigSrc = smallSrc.replace("small", "big");
 
       // Update big imgae :D
-      highlight.src = bigSrc;
+      highlight[0].src = bigSrc;
 
       // update preview image opacity
       previews.forEach(preview => preview.classList.remove("room-active"));
