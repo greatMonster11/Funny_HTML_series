@@ -211,8 +211,91 @@ body {
     animation: wow-mouth 3s linear infinite;
 }
 
+@keyframes heart-beat {
+    25% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(0.6);
+    }
+}
 
+@keyframes wow-face {
+    15%,
+    25% {
+        transform: rotate(20deg) translate(-25px);
+    }
 
+    45%,
+    65% {
+        transform: rotate(-20deg) translate(25px);
+    }
+
+    75%,
+    100% {
+        transform: rotate(0deg) translate(0px);
+    }
+}
+
+@keyframes wow-brow {
+    15%,
+    65% {
+        top: 25px;
+    }
+
+    75%,
+    100%,
+    0% {
+        top: 15px;
+    }
+}
+
+@keyframes wow-mouth {
+    10%,
+    30% {
+        width: 20px;
+        height: 20px;
+        left: calc(50% - 10px);
+    }
+
+    50%,
+    70% {
+        width: 30px;
+        height: 40px;
+        left: calc(50% - 15px);
+    }
+
+    75%,
+    100% {
+        height: 50px;
+    }
+}
+
+@keyframes hands-up {
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-15deg) translateY(-10px);
+    }
+
+    75%,
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes thumbs-up {
+    25% {
+        transform: rotate(20deg);
+    }
+
+    50%,
+    100% {
+        transform: rotate(5deg);
+    }
+}
 
 
 
