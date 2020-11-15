@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>Simple music player</title>
+    </head>
+
+    <body>
+        <article class="screen">
+            <input type="checkbox" value="None" id="magicButton" name="check" />
+            <label class="main" for="magicButton"></label>
+
+            <div class="coverImage"></div>
+            <div class="search"></div>
+            <div class="bodyPlayer"></div>
+
+            <table class="list">
+                <tr class="song">
+                    <td class="nr">
+                    <h5>1<h5></td>
+                    <td class="title"><h6>Heavydirtysoul<h6></td><!--                                                                                                                     /*player {background: none;text-align: center;font-family: FontAwesome;color: #fff;font-size: 26px;line-height: 26px;width: 216px;height: 35px;position: asolute;bottom: 100px;left: 48%;transform: translate(-50%, 0);z-index: 10;transition: all 0.3s ease-in;border-spacing: 0;}*/-->
+                    <td class="length"><h5>3:54<h5></td>
+                    <td><input type="checkbox" id="heart"/><label class="zmr" for="heart"></label></td>
+                </tr>
+
+                <tr class="song">
+                    <td class="nr"><h5>2<h5></td>
+                    <td class="title"><h6 style="color: #ff564c;">StressedOut<h6></td>
+                    <td class="length"><h5>3:22<h5></td>
+                    <td><input type="checkbox" id="heart1" checked /><label class="zmr" for="heart1"></label></td>
+                </tr>
+
+                <tr class="song">
+                    <td class="nr"><h5>3<h5></td>
+                    <td class="title"><h6>Ride<h6></td>
+                    <td class="length"><h5>3:34<h5></td>
+                    <td><input type="checkbox" id="heart2"/><label class="zmr" for="heart2"></label></td>
+                </tr>
+
+                <tr class="song"><!--                                                                                                                     /*player {background: none;text-align: center;font-family: FontAwesome;color: #fff;font-size: 26px;line-height: 26px;width: 216px;height: 35px;position: asolute;bottom: 100px;left: 48%;transform: translate(-50%, 0);z-index: 10;transition: all 0.3s ease-in;border-spacing: 0;}*/-->
+                    <td class="nr"><h5>4<h5></td>
+                    <td class="title"><h6>Fairy Local<h6></td>
+                    <td class="length"><h5>3:27<h5></td>
+                    <td><input type="checkbox" id="heart3" checked /><label class="zmr" for="heart3"></label></td>
+                </tr>
+
+                <tr class="song">
+                    <td class="nr"><h5>5<h5></td>
+                    <td class="title"><h6>Tear in My Heart<h6></td>
+                    <td class="length"><h5>3:08<h5></td>
+                    <td><input type="checkbox" id="heart4"/><label class="zmr" for="heart4"></label></td>
+                </tr>
+
+                <tr class="song">
+                    <td class="nr"><h5>6<h5></td>
+                    <td class="title"><h6>Lane Boy<h6></td>
+                    <td class="length"><h5>4:13<h5></td>
+                    <td><input type="checkbox" id="heart5"/><label class="zmr" for="heart5"></label></td>
+                </tr>
+                <!--                                                                                                                     /*player {background: none;text-align: center;font-family: FontAwesome;color: #fff;font-size: 26px;line-height: 26px;width: 216px;height: 35px;position: asolute;bottom: 100px;left: 48%;transform: translate(-50%, 0);z-index: 10;transition: all 0.3s ease-in;border-spacing: 0;}*/-->
+                <tr class="song">
+                    <td class="nr"><h5>7<h5></td>
+                    <td class="title"><h6>The Judge<h6></td>
+                    <td class="length"><h5>4:57<h5></td>
+                    <td><input type="checkbox" id="heart6"/><label class="zmr" for="heart6"></label></td>
+                </tr>
+
+                <tr class="song">
+                    <td class="nr"><h5>8<h5></td>
+                    <td class="title"><h6>Doubt<h6></td>
+                    <td class="length"><h5>3:11<h5></td>
+                    <td><input type="checkbox" id="heart7"/><label class="zmr" for="heart7"></label></td>
+                </tr>
+
+                <tr class="song">
+                    <td class="nr"><h5>9<h5></td>
+                    <td class="title"><h6>Polarize<h6></td>
+                    <td class="length"><h5>3:46<h5></td>
+                    <td><input type="checkbox" id="heart8"/><label class="zmr" for="heart8"></label></td>
+                </tr>
+                </table>
+                <!--                                                                                                                     /*player {background: none;text-align: center;font-family: FontAwesome;color: #fff;font-size: 26px;line-height: 26px;width: 216px;height: 35px;position: asolute;bottom: 100px;left: 48%;transform: translate(-50%, 0);z-index: 10;transition: all 0.3s ease-in;border-spacing: 0;}*/-->
+                <div class="shadow"></div>
+
+                <div class="bar"></div>
+
+                <div class="info">
+                    <h4>STRESSED OUT</h4>
+                    <h3>twenty one pilots - Blurryface</h3>
+                </div>
+                <audio preload="auto" id="audio" controls>
+                    <source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3">
+                    <source src="http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.ogg">
+                </audio>
+                <table class="player">
+                    <td><input type="checkbox" id="backward"/><label class="backward" for="backward"></label></td>
+                    <td><input type="checkbox" id="play" title="Play" onclick="togglePlayPause()"/><label class="play" for="play"></label></td>
+                    <td><input type="checkbox" id="forward"/><label class="forward" for="forward"></label></td>
+                </table>
+
+                <table class="footer">
+                    <td><input type="checkbox" id="love" checked /><label class="love" for="love"></label></td><!--                                                                                                                     /*player {background: none;text-align: center;font-family: FontAwesome;color: #fff;font-size: 26px;line-height: 26px;width: 216px;height: 35px;position: asolute;bottom: 100px;left: 48%;transform: translate(-50%, 0);z-index: 10;transition: all 0.3s ease-in;border-spacing: 0;}*/-->
+                    <td><input type="checkbox" id="shuffle"/><label class="shuffle" for="shuffle"></label></td>
+                    <td><input type="checkbox" id="repeat" checked /><label class="repeat" for="repeat"></label></td>
+                    <td><input type="checkbox" id="options"/><label class="options" for="options"></label></td>
+                </table>
+
+                <div class="current"><h2>STRESSED OUT</h2></div>
+        </article>
+        <script src="index.js"></script>
+    </body>
+</html>
+
