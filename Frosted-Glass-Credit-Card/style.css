@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+* {
+    marign: 0;
+    padding: 0;
+}
+
+body {
+    background: url('https://images.pexels.com/photos/1655166/pexels-photo-1655166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center;
+    background-size: cover;
+    display: grid;
+    font-family: 'Inconsolata', monospace;
+    min-height: 100vh;
+    place-items: center;
+}
+
+.holder {
+    position: relative;
+}
+
+.holder::before,
+.holder::after {
+    animation: orbit 5s linear infinite;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    content: '';
+    height: 150px;
+    position: absolute;
+    width: 150px;
+}
+
+.holder::before {
+    background: #ffe897;
+    background: -moz-radial-gradient(top right, #ffe897, #f98a05);
+    background: radial-gradient(to bottom left, #ffe897, #f98a05);
+    background: -webkit-radial-gradient(top right, #ffe897, #f98a05);
+}
+
+.holder::after {
+    animation-delay: 2.5s;
+    background: #e0e793;
+    background: -moz-radial-gradient(bottom right, #e0e793, #6dd0f1);
+    background: radial-gradient(to top left, #e0e793, #6dd0f1);
+    background: -webkit-radial-gradient(bottom right, #e0e793, #6dd0f1);
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.card {
+    border: 1px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+    width: 370px;
+}
+
+.card::before {
+    background-color: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.card__text {
+    color: #6f7886;
+    margin-left: 30px;
+    margin-top: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.card svg {
+    bottom: 30px;
+    position: absolute;
+    right: 30px;
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+}
